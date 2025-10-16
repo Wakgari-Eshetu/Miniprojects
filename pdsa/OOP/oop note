@@ -1,0 +1,35 @@
+oop in python 
+oop helps developer to biuld modular , mantainable and scalable application .
+
+it helps to group the code as classes and object
+object has thing or attribute that has specific data and 
+perform certain operation using methods
+
+1. class: collection of the objects or the blueprint for an object
+ defines a set of attributes and method an object of that class can have 
+
+ojects can be method and variable 
+1. variable: used for assign the value to it.
+ variable type in python 
+ a.public: by deafult all the variable inside the class is 
+ deafult(can be assecciable inside the class and outside the class)
+ b.protected: assecciable but not recommended defined using one underscore before the name
+ c.private: assecciable only inside the class defined using two underscores before the name 
+
+
+depending the asseccibility inside the class it can be 
+1. insatance: inside method in class to update we need to use the 
+classrepresentative.varname = "something"
+2. class variable : outside any method in class update it using the class name like
+classname.variablename = "something new"
+-------------------- -------------------- -------------------- 
+2.Method: is function inside the class 
+ there are three type of class 
+
+ 1. instance method: the deafult that take self as the first parameters
+ 2. class method: has decoreator called @classMethod take
+cls as first parameter instead of self .
+ 3. static method: niether of them and dont take self or cls as the fisrt parameter 
+
+
+ 
