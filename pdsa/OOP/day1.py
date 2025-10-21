@@ -6,19 +6,23 @@ print("Jesus is lord.")
 3.__init__ method 
 4. class and instance variable 
 5. inheritance in oop:it allows to 
+'''
 
 class Dog:
     def __init__(self,name ):
         self.name = name 
 
-    def dispalay_name(self):
-        print(f"the name of the dog is {self.name }.")
-
+    def dispalay_name(self,jajc):
+        print(f"the name of the dog is {self.name } and {jajc}.")
+    
+    def lel(self):
+        print(self.name )
 class TypeOneDog(Dog):
     def sound(self):
         print("sounds woof!!")
 
 c= TypeOneDog("jen")
+w = TypeOneDog("kna")
 print(c.sound())
 
 class Animal:
@@ -45,7 +49,7 @@ class dog(Animal,life):
 
 c = dog("kak",4,"kakakak")
 c.display("woof woof")
-'''
+
 class Animal:
     def __init__(self,name):
         self.name = name 
@@ -79,5 +83,13 @@ class Manager(Employee):  # Manager inherits from Employee
         print(self.name, "manages", dept, "department")
 
 mgr = Manager("")
-mgr.show_role()
+mgr.show_role() 
 mgr.department("HR")
+
+class Dog:
+    sound = "bark"
+    def whattodo(self,name ,sound):
+        print(f"the job of my dog called {name} is {sound}")
+    
+# Creating object from class
+Dog().whattodo("kit","bark") # Accessing the class
