@@ -93,3 +93,6 @@ class Dog:
     
 # Creating object from class
 Dog().whattodo("kit","bark") # Accessing the class
+
+s = True 
+dir(s)
