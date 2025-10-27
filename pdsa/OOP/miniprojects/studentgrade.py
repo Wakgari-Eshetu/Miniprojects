@@ -80,7 +80,7 @@ class StudentManager:
     
     def add_student(self, student):
         self.students[student.id] = student
-        print(f"✅ Student '{student.fn} {student.sn}' added.")
+        print(f"Student '{student.fn} {student.sn}' added.")
     
     def find_student(self, student_id):
         return self.students.get(student_id)
@@ -97,7 +97,7 @@ class StudentManager:
             del self.students[student_id]
             print("🗑️ Student deleted.")
         else:
-            print("❌ Student not found.")
+            print("Student not found.")
 
 def main():
     manager = StudentManager()
@@ -135,7 +135,7 @@ def main():
                 ects = int(input("Enter ECTS: "))
                 student.add_subject(subject, score, credit_hour, ects)
             else:
-                print("❌ Student not found.")
+                print("Student not found.")
         
         elif choice == "4":
             sid = input("Enter Student ID: ")
@@ -143,17 +143,17 @@ def main():
             if student:
                 print(f"{student.fn}'s GPA = {student.calculate_gpa()}")
             else:
-                print("❌ Student not found.")
+                print("Student not found.")
         
         elif choice == "5":
             sid = input("Enter Student ID: ")
             manager.delete_student(sid)
         
         elif choice == "6":
-            print("👋 Exiting...")
+            print("Exiting...")
             break
         
         else:
-            print("❌ Invalid choice.")
+            print(" Invalid choice.")
 if __name__ == "__main__":
     main()
